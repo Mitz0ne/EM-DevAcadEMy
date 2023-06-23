@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ro-RO">
      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">​
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,8 +10,8 @@
   <body>
     <header>
         <div class="logo">
-            <a href="homepage.html">
-                <img src="img/logo.png" width="100" height="100" alt="Website Logo">
+            <a class="logo__link" href="homepage.html">
+                <img class="logo__image" src="img/logo.png" width="100" height="100" alt="Website Logo">
             </a>
         </div>
         <div class="search-bar">
@@ -20,58 +21,52 @@
                 <button type="submit">Search</input>
             </form>
         </div>
-        <div class="language-selector">
-            <button class="language-button">
-              <span class="language-code">EN</span>
-              <img class="language-flag" src="en-flag.png" alt="English Flag">
-              <span class="arrow-down-second"></span>
+        <div class="language">
+            <button class="language__button">
+              <span class="language__code">EN</span>
+              <img class="language__flag" src="en-flag.png" alt="English Flag">
+              <span class="language__arrow arrow--down-second"></span>
             </button>
-            <ul class="language-dropdown">
-              <li><a href="#" data-lang="EN"><img src="en-flag.png" alt="English Flag">EN</a></li>
-              <li><a href="#" data-lang="RO"><img src="ro-flag.png" alt="Romanian Flag">RO</a></li>
+            <ul class="languageDropdown">
+              <li class="languageDropdown__item">
+                <a href="#" data-lang="EN">
+                    <img src="en-flag.png" alt="English Flag">
+                    EN
+                </a>
+            </li>
+              <li class="languageDropdown__item">
+                <a href="#" data-lang="RO">
+                    <img src="ro-flag.png" alt="Romanian Flag">
+                    RO
+                </a>
+            </li>
             </ul>
         </div>
         <nav>
             <ul class="navbar">
-                <li class="navbar-item">
-                    <a class="navbar-item-title" href="#">
+                <li class="navbar__item">
+                    <a class="navbar__item-title" href="#">
                         Discover
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M12 14l-4-4h8z"/> </g> </svg>
                     </a>
-                    <p class="navbar-item-description">Discover the urban nature</p>
-                    <div class="dropdown">
-                        <ul class="submenu">
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <li class="test-parent"><p class="test-ceva">Asta este un alt element, separat.</p></li>
-                            <li class="test-parent test-ceva"><a class="test-link" href="#">Submenu 2</a></li>
-                            <p class="test-paragraph test-ceva test-altceva">This is a test paragraph in order to test some text properties</p>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
+                    <p class="navbar__item-description">Discover the urban nature</p>
+                    <div class="navbar__dropdown">
+                        <ul class="navbar__dropdown-submenu content__holder">
+                            <li><a href="#">Submenu 1</a></li>
                             <li><a href="#">Submenu 2</a></li>
                             <li><a href="#">Submenu 3</a></li>
                             <li><a href="#">Submenu 4</a></li>
-                            <li><a href="#">Submenu 5</a></li>
-                            <li><a href="#">Submenu 6</a></li>
-                            <li><a href="#">Submenu 7</a></li>
-                            <li><a href="#">Submenu 8</a></li>
-                            <li><a href="#">Submenu 9</a></li>
-                            <li><a href="#">Submenu 10</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="navbar-item">
-                    <a class="navbar-item-title" href="#">
+                <li class="navbar__item">
+                    <a class="navbar__item-title" href="#">
                         Information
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M12 14l-4-4h8z"/> </g> </svg>
                     </a>
-                    <p class="navbar-item-description">Discover the urban nature</p>
-                    <div class="dropdown">
-                        <ul class="submenu">
+                    <p class="navbar__item-description">Discover the urban nature</p>
+                    <div class="navbar__dropdown">
+                        <ul class="navbar__dropdown-submenu">
                             <li><a href="#">Submenu 1</a></li>
                             <li><a href="#">Submenu 2</a></li>
                             <li><a href="#">Submenu 3</a></li>
@@ -85,14 +80,14 @@
                         </ul>
                     </div>
                 </li>
-                <li class="navbar-item">
-                    <a class="navbar-item-title" href="#">
+                <li class="navbar__item">
+                    <a class="navbar__item-title" href="#">
                         Get Involved
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M12 14l-4-4h8z"/> </g> </svg>
                     </a>
-                    <p class="navbar-item-description">Discover the urban nature</p>
-                    <div class="dropdown">
-                        <ul class="submenu">
+                    <p class="navbar__item-description">Discover the urban nature</p>
+                    <div class="navbar__dropdown">
+                        <ul class="navbar__dropdown-submenu">
                             <li><a href="#">Submenu 1</a></li>
                             <li><a href="#">Submenu 2</a></li>
                             <li><a href="#">Submenu 3</a></li>
@@ -106,14 +101,14 @@
                         </ul>
                     </div>
                 </li>
-                <li class="navbar-item">
-                    <a class="navbar-item-title" href="#">
+                <li class="navbar__item">
+                    <a class="navbar__item-title" href="#">
                         Press Appearances
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M12 14l-4-4h8z"/> </g> </svg>
                     </a>
-                    <p class="navbar-item-description">Discover the urban nature</p>
-                    <div class="dropdown">
-                        <ul class="submenu">
+                    <p class="navbar__item-description">Discover the urban nature</p>
+                    <div class="navbar__dropdown">
+                        <ul class="navbar__dropdown-submenu">
                             <li><a href="#">Submenu 1</a></li>
                             <li><a href="#">Submenu 2</a></li>
                             <li><a href="#">Submenu 3</a></li>
@@ -130,59 +125,59 @@
             </ul>
         </nav>
     </header>
-    <section id="hero" class="hero">
-        <div class="carousel">
-            <div class="carousel-item">
+    <section id="Hero" class="hero">
+        <div class="hero__carousel">
+            <div class="hero__carousel-item carousel-item">
                 <img src="image1.jpg" alt="Image 1">
                 </div>
-                <div class="carousel-item">
+                <div class="hero__carousel-item carousel-item">
                 <img src="image2.jpg" alt="Image 2">
                 </div>
-                <div class="carousel-item">
+                <div class="hero__carousel-item carousel-item">
                 <img src="image3.jpg" alt="Image 3">
             </div>
-            <div class="carousel-nav">
-                <button class="nav-btn active" data-index="0"></button>
-                <button class="nav-btn" data-index="1"></button>
-                <button class="nav-btn" data-index="2"></button>
+            <div class="hero__carousel-nav carousel-nav">
+                <button class="hero__carousel-nav-btn nav-btn active" data-index="0"></button>
+                <button class="hero__carousel-nav-btn nav-btn" data-index="1"></button>
+                <button class="hero__carousel-nav-btn nav-btn" data-index="2"></button>
             </div>
-            <div class="carousel-controls">
-                <button class="control-btn prev-btn">Prev</button>
-                <button class="control-btn next-btn">Next</button>
+            <div class="heri__carousel-controls carousel-controls">
+                <button class="hero__carousel-controls-btn control-btn prev-btn">Prev</button>
+                <button class="hero__carousel-controls-btn  control-btn next-btn">Next</button>
             </div>
         </div>
         <div class="map">MAP</div>
     </section>
-    <section id="sponsors">
-        <ul class="sponsors-list">
-            <li class="sponsor-item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
-            <li class="sponsor-item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
-            <li class="sponsor-item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
-            <li class="sponsor-item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
-            <li class="sponsor-item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
-            <li class="sponsor-item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
-            <li class="sponsor-item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
-            <li class="sponsor-item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
-            <li class="sponsor-item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
-            <li class="sponsor-item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
+    <section id="Sponsors" class="sponsors">
+        <ul class="sponsors__list">
+            <li class="sponsors__item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
+            <li class="sponsors__item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
+            <li class="sponsors__item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
+            <li class="sponsors__item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
+            <li class="sponsors__item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
+            <li class="sponsors__item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
+            <li class="sponsors__item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
+            <li class="sponsors__item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
+            <li class="sponsors__item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
+            <li class="sponsors__item"><a href="#" class="sponsor-url"><img src="img/sponsor.png" alt="Sponsor image" class="sponsor-image"></a></li>
         </ul>
     </section>
     <section id="latestNews">
         <h2>Latest News</h2>
-        <div class="news-cards">
-            <div class="card">
+        <div class="latestNews__cards">
+            <div class="latestNews__card">
             <img src="img/news-card.png" alt="News 1">
             <h3>News 1</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisl ullamcorper, consectetur metus non, pulvinar elit.</p>
             <a href="news1.html" class="learn-more">Learn More</a>
         </div>
-        <div class="card">
+        <div class="latestNews__card">
             <img src="img/news-card.png" alt="News 2">
             <h3>News 2</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisl ullamcorper, consectetur metus non, pulvinar elit.</p>
             <a href="news2.html" class="learn-more">Learn More</a>
         </div>
-        <div class="card">
+        <div class="latestNews__card">
             <img src="img/news-card.png" alt="News 3">
             <h3>News 3</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisl ullamcorper, consectetur metus non, pulvinar elit.</p>
@@ -190,15 +185,15 @@
         </div>
         <a href="all-news.html" class="more-news">More News</a>
     </section>
-    <section id="petitions">Petitions</section>
-    <section id="events">Events</section>
-    <section id="pressAppearances">Press Appearances</section>
-    <section id="social">Social Section</section>
-    <section id="problemReport">Report a Problem</section>
-    <footer id="footer">Footer</footer>
+    <section id="Petitions">Petitions</section>
+    <section id="Events">Events</section>
+    <section id="PressAppearances">Press Appearances</section>
+    <section id="Social">Social Section</section>
+    <section id="ProblemReport">Report a Problem</section>
+    <footer id="Footer">Footer</footer>
 
 
-
+    <!-- This following part is only for testing and showcase purposes -->
     <div class="test-parent"><p class="test-ceva">First text</p></div>
     <p class="test-ceva specific">Second text this is more for testing purposes</p>
     <section class="test-section test-parent">
@@ -218,6 +213,14 @@
       <div class="position-test-div third">
       </div>
     </section>
+    <a class="test-url" href="#">this is my url</a>
+    <ul class="test-list">
+      <li class="test-list-item">first</li>
+      <li class="test-list-item">second</li>
+      <li class="test-list-item">third</li>
+      <li class="test-list-item">fourth</li>
+      <li class="test-list-item">fifth</li>
+    </ul>
 
 
     <!-- <script type="text/javascript" src="js/script.js"></script> -->

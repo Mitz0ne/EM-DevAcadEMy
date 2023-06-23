@@ -1,0 +1,234 @@
+/* ------CSS RESET -----*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*-----------Custom styling------------*/
+* {
+  box-sizing: border-box;
+}
+
+.content__holder {
+  width: 100%;
+  white-space: nowrap;
+  margin: 100px auto;
+  max-width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .content__holder {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content__holder {
+    max-width: 1200px;
+  }
+}
+
+.col {
+  display: inline-block;
+  white-space: normal;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.test-parent {
+  width: 400px;
+  height: 400px;
+  /* background-image: url("https://cdn.pixabay.com/photo/2015/03/10/17/23/youtube-667451_1280.png"); */
+  padding: 10px 7px 8px 3px;
+  /* border: 2px inset red; */
+  opacity: 1;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.test-link {
+  width: 400px;
+  height: 400px;
+  /* background-image: url("https://cdn.pixabay.com/photo/2015/03/10/17/23/youtube-667451_1280.png"); */
+  padding: 10px 7px 8px 3px;
+  /* border: 2px inset red; */
+}
+
+.test-ceva {
+  font-size: 40px;
+  color: blue;
+  text-decoration-line: underline;
+  text-align: center;
+}
+
+.test-span {
+
+}
+
+#paragraphAlpha {
+  font-size: 40px;
+}
+
+
+
+
+.position-test-section {
+  width: 600px;
+  height: 600px;
+  background-color: aquamarine;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.position-test-div {
+  width: 30%;
+  height: 150px;
+}
+
+/* .position-test-div.first {
+  position: relative;
+  top: 70px;
+  left: 40px;
+  background-color: blueviolet;
+} */
+
+.position-test-div:first-child {
+  position: relative;
+  top: 70px;
+  left: 40px;
+  background-color: blueviolet;
+}
+
+.position-test-div.first .inside-div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: darkgoldenrod;
+}
+
+.position-test-div.second {
+  background-color: black;
+}
+
+.position-test-div.third {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: crimson;
+}
+
+.test-url {
+  display: block;
+  margin: 40px;
+  padding-left: 30px;
+  position: relative;
+  line-height: 24px;
+}
+
+.test-url::after {
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yMS44ODMgMTJsLTcuNTI3IDYuMjM1LjY0NC43NjUgOS03LjUyMS05LTcuNDc5LS42NDUuNzY0IDcuNTI5IDYuMjM2aC0yMS44ODR2MWgyMS44ODN6Ii8+PC9zdmc+");
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height:20px;
+}
+
+.test-list {
+  margin: 50px;
+}
+
+.test-list-item:nth-child(2n + 1) {
+  color: red;
+}
+
+.test-list-item::first-letter {
+  color: green;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+
+.form {
+  max-width: 50%;
+  color: red;
+  font-size: 12px;
+}
+
+.form__inpup {
+  color: #000000;
+  font-size: 18px;
+}
+
+/*----------------------SUBSCRIBE TO NEWSLETTER FORM-----------------------*/
+.form__newsletter {
+  background-color: aqua;
+}
+
+.form__newsletter__input {
+  font-size: 24px;
+}
+
+.form__newsletter__input--color-green {
+  color: green;
+}
