@@ -119,16 +119,9 @@ body {
   text-align: center;
 }
 
-.test-span {
-
-}
-
 #paragraphAlpha {
   font-size: 40px;
 }
-
-
-
 
 .position-test-section {
   width: 600px;
@@ -143,13 +136,6 @@ body {
   width: 30%;
   height: 150px;
 }
-
-/* .position-test-div.first {
-  position: relative;
-  top: 70px;
-  left: 40px;
-  background-color: blueviolet;
-} */
 
 .position-test-div:first-child {
   position: relative;
@@ -232,3 +218,9 @@ body {
 .form__newsletter__input--color-green {
   color: green;
 }
+
+
+@media (min-width:280px)  { /* smartphones, iPhone, portrait 480x320 phones - also includes galaxy fold (with a small 280px resolution*/ }
+@media (min-width:768px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:1280px)  { /* landscape tablets, lo-res laptops ands desktops */ }
+@media (min-width:1366px) { /* laptops and desktops */ }
