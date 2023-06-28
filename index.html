@@ -51,12 +51,12 @@
                     </a>
                     <p class="navbar__item-description">Discover the urban nature</p>
                     <div class="navbar__dropdown">
-                        <ul class="navbar__dropdown-submenu content__holder">
-                            <li><a href="#">Submenu 1</a></li>
-                            <li><a href="#">Submenu 2</a></li>
-                            <li><a href="#">Submenu 3</a></li>
-                            <li><a href="#">Submenu 4</a></li>
-                        </ul>
+                        <div class="navbar__dropdown-submenu navbar__dropdown-submenu--flexbox-container content__holder">
+                            <div class="navbar__dropdown-submenu--flexbox-item"><a href="#">Submenu 1</a></div>
+                            <div class="navbar__dropdown-submenu--flexbox-item"><a href="#">Submenu 2</a></div>
+                            <div class="navbar__dropdown-submenu--flexbox-item"><a href="#">Submenu 3</a></div>
+                            <div class="navbar__dropdown-submenu--flexbox-item"><a href="#">Submenu 4</a></div>
+                        </div>
                     </div>
                 </li>
                 <li class="navbar__item">
@@ -194,7 +194,7 @@
 
 
     <!-- This following part is only for testing and showcase purposes -->
-    <div class="test-parent"><p class="test-ceva">First text</p></div>
+    <!-- <div class="test-parent"><p class="test-ceva">First text</p></div>
     <p class="test-ceva specific">Second text this is more for testing purposes</p>
     <section class="test-section test-parent">
       <p id="paragraphAlpha">hai sa avem si text pe langa
@@ -220,6 +220,39 @@
       <li class="test-list-item">third</li>
       <li class="test-list-item">fourth</li>
       <li class="test-list-item">fifth</li>
+    </ul> -->
+
+    <div class="wrapper">
+        <div class="top-container">Top Container</div>
+        <article class="main">
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+        </article>
+        <aside class="aside aside-1">Aside 1</aside>
+        <aside class="aside aside-2">Aside 2</aside>
+        <div class="bottom-container">Bottom Container</div>
+    </div>
+
+    <section>
+        <form class="form-test" action="">
+            <input class="form-text-input" type="text">
+            <input class="form-text-input" type="text">
+            <input class="form-text-input" type="text">
+            <input class="form-text-input" type="text">
+            <input class="form-submit" value=">" type="submit">
+        </form>
+    </section>
+
+    <ul class="grid-container content__holder">
+        <li class="grid-item"><p>test text just for fun</p></li>
+        <li class="grid-item"><p>test text just for fun</p></li>
+        <li class="grid-item"><p>test text just for fun</p></li>
+        <li class="grid-item"><p>test text just for fun</p></li>
+        <li class="grid-item"><p>test text just for fun</p></li>
+        <li class="grid-item"><p>test text just for fun</p></li>
+        <li class="grid-item"><p>test text just for fun</p></li>
+        <li class="grid-item"><p>test text just for fun</p></li>
+        <li class="grid-item"><p>test text just for fun</p></li>
+        <li class="grid-item item-10"><p>test text just for fun</p></li>
     </ul>
 
 
